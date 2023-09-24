@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="UIComponents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSb-Tx-v7n">
+                        <rect key="frame" x="5" y="10" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="CCX-yu-9ND"/>
+                            <constraint firstAttribute="height" constant="46" id="bI0-qe-BJ9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm7-WP-WDf">
+                        <rect key="frame" x="65" y="10" width="239" height="45"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqY-rp-L5m">
+                        <rect key="frame" x="85" y="62.666666666666664" width="37.333333333333343" height="19.666666666666664"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.51764705882352935" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="VY8-yi-WWv">
+                        <rect key="frame" x="65" y="65" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="G3a-y8-CMu"/>
+                            <constraint firstAttribute="height" constant="15" id="Jl2-nP-M2N"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VY8-yi-WWv" firstAttribute="top" secondItem="vm7-WP-WDf" secondAttribute="bottom" constant="10" id="27W-pt-4dI"/>
+                    <constraint firstItem="vm7-WP-WDf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9Bk-c6-UQv"/>
+                    <constraint firstItem="bqY-rp-L5m" firstAttribute="leading" secondItem="VY8-yi-WWv" secondAttribute="trailing" constant="5" id="D47-bx-Esh"/>
+                    <constraint firstAttribute="trailing" secondItem="vm7-WP-WDf" secondAttribute="trailing" constant="16" id="MOG-sc-ZA6"/>
+                    <constraint firstItem="bqY-rp-L5m" firstAttribute="centerY" secondItem="VY8-yi-WWv" secondAttribute="centerY" id="QpQ-jB-QgY"/>
+                    <constraint firstItem="BSb-Tx-v7n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="bZu-Rt-H2r"/>
+                    <constraint firstItem="vm7-WP-WDf" firstAttribute="leading" secondItem="BSb-Tx-v7n" secondAttribute="trailing" constant="14" id="cp5-1u-rPo"/>
+                    <constraint firstAttribute="bottom" secondItem="VY8-yi-WWv" secondAttribute="bottom" constant="10" id="g9R-hw-Efj"/>
+                    <constraint firstItem="VY8-yi-WWv" firstAttribute="leading" secondItem="BSb-Tx-v7n" secondAttribute="trailing" constant="14" id="pIe-LQ-ShJ"/>
+                    <constraint firstItem="BSb-Tx-v7n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="wf4-ec-hj3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgViewUserProfile" destination="BSb-Tx-v7n" id="CHz-Wh-uD6"/>
+                <outlet property="lblUserName" destination="vm7-WP-WDf" id="qyd-ZJ-ZAQ"/>
+                <outlet property="lblUserPhoneNo" destination="bqY-rp-L5m" id="PE5-Aj-vug"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-175.35211267605635"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="call" width="15" height="15"/>
+    </resources>
+</document>

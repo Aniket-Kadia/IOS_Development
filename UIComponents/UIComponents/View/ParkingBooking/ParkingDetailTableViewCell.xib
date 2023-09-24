@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="ParkingDetailTableViewCell" customModule="UIComponents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="293.66666666666669" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFB-Dl-NiU">
+                        <rect key="frame" x="98" y="15" width="37.666666666666657" height="18"/>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.99607843137254903" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.027450980392156862" green="0.45882352941176469" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbY-ER-1or">
+                        <rect key="frame" x="97.999999999999986" y="41" width="185.66666666666663" height="19.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pv8-WU-39g">
+                        <rect key="frame" x="97.999999999999986" y="63.666666666666664" width="185.66666666666663" height="16.333333333333336"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.51764705882352935" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DeU-Md-CIN">
+                        <rect key="frame" x="16" y="16" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Af8-kG-GJK"/>
+                            <constraint firstAttribute="height" constant="70" id="pw8-zw-8j6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IbY-ER-1or" firstAttribute="leading" secondItem="DeU-Md-CIN" secondAttribute="trailing" constant="12" id="KW9-BZ-gav"/>
+                    <constraint firstItem="DeU-Md-CIN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Loo-ig-VEY"/>
+                    <constraint firstItem="DeU-Md-CIN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Mwm-0t-Bd9"/>
+                    <constraint firstItem="Pv8-WU-39g" firstAttribute="leading" secondItem="DeU-Md-CIN" secondAttribute="trailing" constant="12" id="Qed-6T-JdS"/>
+                    <constraint firstItem="fFB-Dl-NiU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="98" id="R2i-t9-lPe"/>
+                    <constraint firstItem="fFB-Dl-NiU" firstAttribute="leading" secondItem="DeU-Md-CIN" secondAttribute="trailing" constant="12" id="U38-mK-PwS"/>
+                    <constraint firstItem="IbY-ER-1or" firstAttribute="top" secondItem="fFB-Dl-NiU" secondAttribute="bottom" constant="8" id="Xh2-n2-ITg"/>
+                    <constraint firstItem="Pv8-WU-39g" firstAttribute="trailing" secondItem="IbY-ER-1or" secondAttribute="trailing" id="aib-6F-SEk"/>
+                    <constraint firstItem="fFB-Dl-NiU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bZC-qI-2mJ"/>
+                    <constraint firstAttribute="trailing" secondItem="IbY-ER-1or" secondAttribute="trailing" constant="10" id="d6v-EU-QNf"/>
+                    <constraint firstAttribute="bottom" secondItem="Pv8-WU-39g" secondAttribute="bottom" constant="15" id="nMO-uA-RCL"/>
+                    <constraint firstItem="Pv8-WU-39g" firstAttribute="top" secondItem="IbY-ER-1or" secondAttribute="bottom" constant="3" id="qL8-Tz-7ew"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgViewParkingPlace" destination="DeU-Md-CIN" id="hFP-Gu-8Mk"/>
+                <outlet property="lblAdress" destination="Pv8-WU-39g" id="lSE-4R-n9J"/>
+                <outlet property="lblPin" destination="fFB-Dl-NiU" id="9nK-2g-xQ7"/>
+                <outlet property="lblTitle" destination="IbY-ER-1or" id="D3o-BD-Ixl"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-36.971830985915496"/>
+        </tableViewCell>
+    </objects>
+</document>
