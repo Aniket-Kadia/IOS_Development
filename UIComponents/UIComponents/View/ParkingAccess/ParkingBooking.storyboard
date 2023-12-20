@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Parking Lot View Controller-->
+        <scene sceneID="qYt-6Y-gxb">
+            <objects>
+                <viewController storyboardIdentifier="ParkingLotViewController" id="kMe-L7-br0" customClass="ParkingLotViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BQ7-MH-fZt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zz4-GO-46c">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="backgroundColor" red="0.023529411760000001" green="0.45882352939999999" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Home" id="5V5-dM-wwh">
+                                        <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="ftu-f8-kU8">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="bell" catalog="system" id="YJR-hy-iDZ">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <navigationBarAppearance key="standardAppearance">
+                                    <color key="backgroundColor" red="0.023529411760000001" green="0.45882352939999999" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <textAttributes key="titleTextAttributes">
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </textAttributes>
+                                </navigationBarAppearance>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0dS-FN-OdF">
+                                <rect key="frame" x="20" y="108" width="353" height="32"/>
+                                <color key="backgroundColor" red="0.023707868529999999" green="0.45901197199999999" blue="0.47385978699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Mark Attendance"/>
+                                    <segment title="TimeSheet"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" red="0.024002945049999998" green="0.36593294139999999" blue="0.37653425340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeParkingSegment:" destination="kMe-L7-br0" eventType="valueChanged" id="qQe-YU-6YL"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AJT-EP-IBY">
+                                <rect key="frame" x="0.0" y="149" width="393" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" red="0.99879950279999996" green="1" blue="0.72832900290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oE4-2x-kaw"/>
+                        <color key="backgroundColor" red="0.023529411760000001" green="0.45882352939999999" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0dS-FN-OdF" firstAttribute="leading" secondItem="oE4-2x-kaw" secondAttribute="leading" constant="20" id="11r-7g-yxT"/>
+                            <constraint firstItem="AJT-EP-IBY" firstAttribute="leading" secondItem="oE4-2x-kaw" secondAttribute="leading" id="KVu-Oo-czB"/>
+                            <constraint firstItem="oE4-2x-kaw" firstAttribute="trailing" secondItem="Zz4-GO-46c" secondAttribute="trailing" id="MdU-Th-H9M"/>
+                            <constraint firstItem="0dS-FN-OdF" firstAttribute="top" secondItem="Zz4-GO-46c" secondAttribute="bottom" constant="5" id="Thu-20-Dht"/>
+                            <constraint firstItem="oE4-2x-kaw" firstAttribute="leading" secondItem="Zz4-GO-46c" secondAttribute="leading" id="fWN-iB-KWG"/>
+                            <constraint firstItem="oE4-2x-kaw" firstAttribute="trailing" secondItem="0dS-FN-OdF" secondAttribute="trailing" constant="20" id="gKm-cF-pA9"/>
+                            <constraint firstAttribute="bottom" secondItem="AJT-EP-IBY" secondAttribute="bottom" id="hUw-e2-jg1"/>
+                            <constraint firstItem="AJT-EP-IBY" firstAttribute="top" secondItem="0dS-FN-OdF" secondAttribute="bottom" constant="10" id="jOT-6o-sZ4"/>
+                            <constraint firstItem="oE4-2x-kaw" firstAttribute="trailing" secondItem="AJT-EP-IBY" secondAttribute="trailing" id="tCx-6Z-L8n"/>
+                            <constraint firstItem="Zz4-GO-46c" firstAttribute="top" secondItem="oE4-2x-kaw" secondAttribute="top" id="zAg-6p-03g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentParking" destination="0dS-FN-OdF" id="Ahd-0m-HRH"/>
+                        <outlet property="tblParkingDetails" destination="AJT-EP-IBY" id="siS-LJ-maH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hh6-3F-926" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="-104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="65"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
